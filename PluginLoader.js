@@ -59,17 +59,15 @@ function loadDocument(documentUrl) {
     if (documentUrl) {
         var extension = documentUrl.split('.').pop(),
             Plugin;
-        extension = extension.toLowerCase();
+        extension = extension.toLowerCase().substr(0, 3);
 
         switch (extension) {
         case 'odt':
-        case 'fodt':
+        case 'fod':
         case 'ott':
         case 'odp':
-        case 'fodp':
         case 'otp':
         case 'ods':
-        case 'fods':
         case 'ots':
             loadPlugin('./ODFViewerPlugin', function () {
                 Plugin = ODFViewerPlugin;

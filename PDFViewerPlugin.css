@@ -4,7 +4,7 @@
     overflow: hidden;
     background-clip: content-box;
     background-color: white;
-    
+
     box-shadow:         0px 0px 7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow:    0px 0px 7px rgba(0, 0, 0, 0.75);
@@ -34,3 +34,10 @@
 ::selection { background:rgba(0,0,255,0.3); }
 ::-moz-selection { background:rgba(0,0,255,0.3); }
 
+#titlebar {
+  display: none !important;
+}
+
+#canvasContainer {
+  top: 0 !important;
+}
